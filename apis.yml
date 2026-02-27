@@ -1,0 +1,44 @@
+name: Scalable Software And Systems
+description: APIs for Scalable Software And Systems
+url: https://scalablesoftwareandsystems.com
+created: '2025-01-20'
+modified: '2025-01-20'
+specificationVersion: '0.18'
+apis:
+- name: Scalable Software And Systems API
+  description: Main API for Scalable Software And Systems services
+  image: https://scalablesoftwareandsystems.com/images/logo.png
+  humanURL: https://scalablesoftwareandsystems.com
+  baseURL: https://api.scalablesoftwareandsystems.com
+  tags:
+  - Software
+  - Systems
+  - Scalability
+  - Enterprise
+  properties:
+  - type: Documentation
+    url: https://scalablesoftwareandsystems.com/docs
+  - type: OpenAPI
+    url: https://api.scalablesoftwareandsystems.com/openapi.json
+  - type: Authentication
+    url: https://scalablesoftwareandsystems.com/docs/authentication
+  - type: Pricing
+    url: https://scalablesoftwareandsystems.com/pricing
+  - type: Support
+    url: https://scalablesoftwareandsystems.com/support
+  - type: Status
+    url: https://status.scalablesoftwareandsystems.com
+  - type: TermsOfService
+    url: https://scalablesoftwareandsystems.com/terms
+  - type: PrivacyPolicy
+    url: https://scalablesoftwareandsystems.com/privacy
+maintainers:
+- FN: Scalable Software And Systems Team
+  email: api@scalablesoftwareandsystems.com
+  url: https://scalablesoftwareandsystems.com/contact
+tags:
+- APIs
+- Software Development
+- Systems Architecture
+- Scalability
+- Enterprise Solutions
