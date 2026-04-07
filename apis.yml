@@ -13,10 +13,10 @@ apis:
     humanURL: https://scalablesoftwareandsystems.com
     baseURL: https://api.scalablesoftwareandsystems.com
     tags:
+      - Enterprise
+      - Scalability
       - Software
       - Systems
-      - Scalability
-      - Enterprise
     properties:
       - type: Documentation
         url: https://scalablesoftwareandsystems.com/docs
@@ -39,8 +39,7 @@ maintainers:
     email: api@scalablesoftwareandsystems.com
     url: https://scalablesoftwareandsystems.com/contact
 tags:
-  - APIs
+  - Enterprise Solutions
+  - Scalability
   - Software Development
   - Systems Architecture
-  - Scalability
-  - Enterprise Solutions
