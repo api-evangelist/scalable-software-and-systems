@@ -1,0 +1,71 @@
+{
+  "example": {
+    "title": "Temporal Workflow Execution — Order Saga",
+    "description": "Example of starting a Temporal durable workflow execution implementing the saga pattern for an order fulfillment process with compensating transactions.",
+    "workflow": {
+      "workflowType": "OrderFulfillmentWorkflow",
+      "workflowId": "order-saga-order-12345",
+      "taskQueue": "order-fulfillment",
+      "input": {
+        "orderId": "order-12345",
+        "customerId": "cust-67890",
+        "items": [
+          {
+            "productId": "prod-001",
+            "quantity": 2,
+            "unitPrice": 49.99
+          },
+          {
+            "productId": "prod-002",
+            "quantity": 1,
+            "unitPrice": 129.99
+          }
+        ],
+        "totalAmount": 229.97,
+        "currency": "USD"
+      },
+      "workflowExecutionTimeout": "PT24H",
+      "workflowRunTimeout": "PT1H",
+      "workflowTaskTimeout": "PT10S",
+      "retryPolicy": {
+        "initialInterval": "PT1S",
+        "maximumInterval": "PT10S",
+        "maximumAttempts": 3,
+        "backoffCoefficient": 2.0,
+        "nonRetryableErrorTypes": ["BusinessValidationError", "InsufficientStockError"]
+      }
+    },
+    "sagaSteps": [
+      {
+        "step": 1,
+        "activity": "ReserveInventoryActivity",
+        "compensate": "ReleaseInventoryActivity",
+        "timeout": "PT30S"
+      },
+      {
+        "step": 2,
+        "activity": "ChargePaymentActivity",
+        "compensate": "RefundPaymentActivity",
+        "timeout": "PT60S"
+      },
+      {
+        "step": 3,
+        "activity": "CreateShipmentActivity",
+        "compensate": "CancelShipmentActivity",
+        "timeout": "PT120S"
+      },
+      {
+        "step": 4,
+        "activity": "SendConfirmationEmailActivity",
+        "compensate": null,
+        "timeout": "PT30S"
+      }
+    ],
+    "response": {
+      "runId": "01234567-89ab-cdef-0123-456789abcdef",
+      "workflowId": "order-saga-order-12345",
+      "status": "WORKFLOW_EXECUTION_STATUS_RUNNING",
+      "startTime": "2026-05-02T10:00:00Z"
+    }
+  }
+}

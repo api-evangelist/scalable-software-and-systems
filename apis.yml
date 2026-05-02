@@ -205,6 +205,9 @@ common:
   - type: Examples
     url: https://github.com/api-evangelist/scalable-software-and-systems/blob/main/examples/scalable-software-and-systems-order-placed-event-example.json
     name: Order Placed Event Example
+  - type: Examples
+    url: https://github.com/api-evangelist/scalable-software-and-systems/blob/main/examples/scalable-software-and-systems-temporal-workflow-example.json
+    name: Temporal Order Saga Workflow Example
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

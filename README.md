@@ -73,6 +73,7 @@ Declarative GitOps continuous delivery API for Kubernetes applications. Manages 
 
 ### Examples
 - [Order Placed Domain Event](examples/scalable-software-and-systems-order-placed-event-example.json) — Example CloudEvents-compliant domain event with event sourcing metadata.
+- [Temporal Order Saga Workflow](examples/scalable-software-and-systems-temporal-workflow-example.json) — Temporal durable workflow implementing the saga pattern for order fulfillment with compensating transactions.
 
 ## Common Resources
 
