@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://schema.org/",
+    "api": "https://api-evangelist.com/vocabulary/",
+    "sas": "https://api-evangelist.com/vocabulary/scalable-software-and-systems/",
+
+    "DistributedSystem": "sas:DistributedSystem",
+    "SoftwareArchitecture": "sas:SoftwareArchitecture",
+    "ArchitecturePattern": "sas:ArchitecturePattern",
+    "DomainModel": "sas:DomainModel",
+    "BoundedContext": "sas:BoundedContext",
+    "EventSourcingAggregate": "sas:EventSourcingAggregate",
+    "WorkflowOrchestration": "sas:WorkflowOrchestration",
+    "BuildingBlock": "sas:BuildingBlock",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "documentation": "schema:documentation",
+    "version": "schema:version",
+    "license": "schema:license",
+    "provider": "schema:provider",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+    "WebAPI": "schema:WebAPI",
+
+    "baseUrl": "api:baseUrl",
+    "apiType": "api:apiType",
+    "authType": "api:authType",
+    "tags": "api:tags",
+
+    "pattern": "sas:pattern",
+    "consistencyModel": "sas:consistencyModel",
+    "messageFormat": "sas:messageFormat",
+    "brokerType": "sas:brokerType",
+    "workflowEngine": "sas:workflowEngine",
+    "activityRetry": "sas:activityRetry",
+    "compensatingTransaction": "sas:compensatingTransaction",
+    "observabilityPillars": "sas:observabilityPillars",
+    "deploymentModel": "sas:deploymentModel",
+    "gitopsEnabled": "sas:gitopsEnabled",
+    "infrastructureAsCode": "sas:infrastructureAsCode"
+  }
+}

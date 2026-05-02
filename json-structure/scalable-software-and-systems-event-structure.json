@@ -1,0 +1,32 @@
+{
+  "structure": {
+    "name": "Domain Event",
+    "description": "Structural documentation for domain events following CloudEvents specification.",
+    "fields": [
+      { "name": "specversion", "type": "string", "required": true, "description": "CloudEvents version (always '1.0')" },
+      { "name": "type", "type": "string", "required": true, "description": "Reverse DNS event type, e.g. com.example.order.placed" },
+      { "name": "source", "type": "uri-reference", "required": true, "description": "Event producer identifier" },
+      { "name": "id", "type": "string", "required": true, "description": "Unique event UUID" },
+      { "name": "time", "type": "date-time", "required": true, "description": "RFC 3339 event timestamp" },
+      { "name": "subject", "type": "string", "required": false, "description": "Subject entity ID (e.g., order ID)" },
+      { "name": "datacontenttype", "type": "string", "required": false, "description": "Payload MIME type (default: application/json)" },
+      { "name": "data", "type": "object", "required": false, "description": "Event payload (event-type specific)" },
+      { "name": "correlationId", "type": "string", "required": false, "description": "Cross-service trace correlation ID" },
+      { "name": "causationId", "type": "string", "required": false, "description": "ID of causing command or event" },
+      { "name": "aggregateId", "type": "string", "required": false, "description": "Aggregate root identifier" },
+      { "name": "aggregateType", "type": "string", "required": false, "description": "Aggregate type name" },
+      { "name": "aggregateVersion", "type": "integer", "required": false, "description": "Optimistic concurrency version" },
+      {
+        "name": "metadata",
+        "type": "object",
+        "required": false,
+        "fields": [
+          { "name": "userId", "type": "string", "required": false },
+          { "name": "tenantId", "type": "string", "required": false },
+          { "name": "traceId", "type": "string", "required": false },
+          { "name": "spanId", "type": "string", "required": false }
+        ]
+      }
+    ]
+  }
+}

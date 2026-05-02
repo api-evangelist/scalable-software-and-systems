@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api-evangelist.com/schemas/scalable-software-and-systems/domain-event",
+  "title": "Domain Event",
+  "description": "Schema for a domain event in an event-sourced or event-driven system following CloudEvents conventions.",
+  "type": "object",
+  "required": ["specversion", "type", "source", "id", "time"],
+  "properties": {
+    "specversion": {
+      "type": "string",
+      "description": "CloudEvents specification version.",
+      "enum": ["1.0"],
+      "example": "1.0"
+    },
+    "type": {
+      "type": "string",
+      "description": "Event type in reverse DNS notation.",
+      "example": "com.example.order.placed"
+    },
+    "source": {
+      "type": "string",
+      "format": "uri-reference",
+      "description": "Identifies the event producer (bounded context or service).",
+      "example": "/orders-service"
+    },
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this event occurrence (UUID recommended).",
+      "example": "b2c3d4e5-f6a7-8901-bcde-f01234567890"
+    },
+    "time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the event occurred (RFC 3339)."
+    },
+    "subject": {
+      "type": "string",
+      "description": "Subject/entity identifier this event relates to (e.g., order ID).",
+      "example": "order-12345"
+    },
+    "datacontenttype": {
+      "type": "string",
+      "description": "Content type of the data field.",
+      "default": "application/json",
+      "example": "application/json"
+    },
+    "dataschema": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI of the schema the data attribute conforms to."
+    },
+    "data": {
+      "type": "object",
+      "description": "Event payload. Schema depends on event type.",
+      "additionalProperties": true
+    },
+    "correlationId": {
+      "type": "string",
+      "description": "Correlation ID for tracing requests across service boundaries."
+    },
+    "causationId": {
+      "type": "string",
+      "description": "ID of the command or event that caused this event."
+    },
+    "aggregateId": {
+      "type": "string",
+      "description": "Identifier of the domain aggregate this event belongs to."
+    },
+    "aggregateType": {
+      "type": "string",
+      "description": "Type of the domain aggregate (e.g., Order, Customer, Payment)."
+    },
+    "aggregateVersion": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Optimistic concurrency version of the aggregate after this event."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata (user ID, tenant ID, trace context, etc.).",
+      "properties": {
+        "userId": { "type": "string" },
+        "tenantId": { "type": "string" },
+        "traceId": { "type": "string" },
+        "spanId": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "example": {
+    "title": "Order Placed Domain Event",
+    "description": "Example of an order.placed domain event following CloudEvents specification and event sourcing patterns.",
+    "specversion": "1.0",
+    "type": "com.example.orders.order.placed",
+    "source": "/orders-service",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "time": "2026-05-02T10:30:00Z",
+    "subject": "order-98765",
+    "datacontenttype": "application/json",
+    "correlationId": "req-abc123",
+    "causationId": "cmd-xyz789",
+    "aggregateId": "order-98765",
+    "aggregateType": "Order",
+    "aggregateVersion": 1,
+    "data": {
+      "orderId": "order-98765",
+      "customerId": "customer-4567",
+      "items": [
+        {
+          "productId": "prod-001",
+          "quantity": 2,
+          "unitPrice": 29.99,
+          "currency": "USD"
+        }
+      ],
+      "totalAmount": 59.98,
+      "currency": "USD",
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "San Francisco",
+        "state": "CA",
+        "postalCode": "94105",
+        "country": "US"
+      },
+      "status": "pending"
+    },
+    "metadata": {
+      "userId": "user-1234",
+      "tenantId": "tenant-abc",
+      "traceId": "0af7651916cd43dd8448eb211c80319c",
+      "spanId": "b7ad6b7169203331"
+    }
+  }
+}

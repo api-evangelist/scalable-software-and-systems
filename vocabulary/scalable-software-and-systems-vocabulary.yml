@@ -1,0 +1,144 @@
+vocabulary:
+  name: Scalable Software and Systems Vocabulary
+  description: >-
+    Domain vocabulary for building scalable software and systems, covering
+    architectural patterns, design principles, and engineering concepts used
+    by software architects and senior engineers building enterprise-grade
+    distributed systems.
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  terms:
+    - term: CQRS (Command Query Responsibility Segregation)
+      definition: >-
+        An architectural pattern that separates read (query) and write (command)
+        operations into distinct models. Commands modify state and raise events;
+        queries return data without side effects. Enables independent scaling
+        of reads and writes and simplifies complex domain logic.
+      tags:
+        - Architecture Pattern
+        - Design Pattern
+    - term: Choreography
+      definition: >-
+        An event-driven approach to coordinating distributed services where
+        each service reacts to events published by other services, without
+        a central orchestrator. More loosely coupled than orchestration but
+        harder to trace end-to-end behavior.
+      tags:
+        - Architecture Pattern
+        - Event Driven
+    - term: Domain-Driven Design (DDD)
+      definition: >-
+        A software development methodology focused on modeling software to
+        match a domain's complexity and reality. Key concepts include Bounded
+        Context, Aggregate, Entity, Value Object, Domain Event, Repository,
+        and Ubiquitous Language.
+      tags:
+        - Architecture
+        - Design Methodology
+    - term: Event Sourcing
+      definition: >-
+        A persistence pattern where application state changes are stored as
+        a sequence of immutable domain events rather than the current state.
+        The current state is reconstructed by replaying events. Enables
+        full audit trails and temporal queries.
+      tags:
+        - Architecture Pattern
+        - Design Pattern
+    - term: Event-Driven Architecture (EDA)
+      definition: >-
+        An architectural paradigm where services communicate by producing and
+        consuming events. Events represent state changes and are published
+        to a message broker (Kafka, NATS, RabbitMQ). Enables loose coupling,
+        scalability, and real-time data processing.
+      tags:
+        - Architecture
+        - Integration
+    - term: GitOps
+      definition: >-
+        An operational framework where Git repositories are the single source
+        of truth for infrastructure and application deployments. Changes to
+        the desired state are made via pull requests; automated operators
+        (Argo CD, Flux) reconcile actual state with the desired state.
+      tags:
+        - DevOps
+        - Operations
+    - term: MACH Architecture
+      definition: >-
+        An acronym for Microservices, API-first, Cloud-native, and Headless.
+        A modern approach to enterprise software where applications are
+        built as collections of specialized services communicating via APIs,
+        deployed on cloud platforms, with headless frontends.
+      tags:
+        - Architecture
+        - Enterprise
+    - term: Observability
+      definition: >-
+        The ability to understand the internal state of a system from its
+        external outputs. The three pillars are: Metrics (quantitative
+        measurements), Logs (discrete events), and Traces (request flows
+        across services). Implemented via OpenTelemetry, Prometheus, Jaeger.
+      tags:
+        - Operations
+        - Monitoring
+    - term: Orchestration
+      definition: >-
+        A centralized approach to coordinating distributed services where an
+        orchestrator (e.g., Temporal, AWS Step Functions) calls services
+        and manages workflow state. Provides clear visibility of workflow
+        progress but introduces a central coordination point.
+      tags:
+        - Architecture Pattern
+        - Workflow
+    - term: Saga Pattern
+      definition: >-
+        A pattern for managing distributed transactions across multiple
+        services without two-phase commit. A saga is a sequence of local
+        transactions; compensating transactions undo completed steps if
+        a later step fails. Implemented via choreography or orchestration.
+      tags:
+        - Architecture Pattern
+        - Data Consistency
+    - term: Strangler Fig Pattern
+      definition: >-
+        An incremental migration pattern for replacing a legacy system by
+        gradually building new functionality alongside the old system,
+        routing new requests to the new system, until the old system can
+        be decommissioned. Named after strangler fig trees.
+      tags:
+        - Architecture Pattern
+        - Migration
+    - term: Bounded Context
+      definition: >-
+        A central pattern in Domain-Driven Design defining a clear boundary
+        within which a domain model is defined and applicable. Within a
+        bounded context, all terms in the ubiquitous language have specific
+        meanings. Microservices are often aligned with bounded contexts.
+      tags:
+        - Architecture
+        - DDD
+    - term: Distributed Tracing
+      definition: >-
+        A method for tracking requests as they flow through distributed
+        services. Each request gets a unique trace ID; spans record timing
+        at each service hop. Tools: Jaeger, Zipkin, OpenTelemetry, Honeycomb.
+      tags:
+        - Observability
+        - Operations
+    - term: Feature Flag
+      definition: >-
+        A software development technique that allows functionality to be
+        enabled or disabled without deploying new code. Enables progressive
+        rollouts, A/B testing, and instant rollbacks. Implemented via
+        services like LaunchDarkly, Unleash, or Flagsmith.
+      tags:
+        - Deployment
+        - Engineering
+    - term: Infrastructure as Code (IaC)
+      definition: >-
+        The practice of managing and provisioning infrastructure through
+        machine-readable configuration files rather than manual processes.
+        Tools include Terraform, Pulumi, AWS CDK, and Ansible. Enables
+        version control, reproducibility, and automation of infrastructure.
+      tags:
+        - DevOps
+        - Infrastructure
