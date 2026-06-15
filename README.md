@@ -1,87 +1,209 @@
-# Scalable Software and Systems
+# Scalable Software and Systems (scalable-software-and-systems)
 
-A topic collection exploring the APIs, design patterns, frameworks, and platforms that enable scalable software and systems engineering. Covers architectural patterns such as CQRS, event sourcing, saga, MACH architecture, API-first design, and modular monoliths, as well as the tooling ecosystems that support building maintainable, high-scale software.
+A topic collection exploring the APIs, design patterns, frameworks, and platforms that enable scalable software and systems engineering. Covers architectural patterns such as CQRS, event sourcing, saga, MACH architecture, API-first design, and modular monoliths, as well as the tooling ecosystems that support building maintainable, high-scale software. Relevant to software architects, platform teams, and senior engineers building enterprise-grade distributed systems.
 
-**Type:** Topic Collection
-**Tags:** API First, Architecture Patterns, CQRS, Distributed Systems, Enterprise, Event Driven, Microservices, Scalable Architecture, Software Engineering, Systems Design
+## Scope
+
+- **Type:** Index
+
+## Tags
+
+- API First
+- Architecture Patterns
+- CQRS
+- Distributed Systems
+- Enterprise
+- Event Driven
+- Microservices
+- Scalable Architecture
+- Software Engineering
+- Systems Design
+
+## Timestamps
+
+- **Created:** 2025-01-20
+- **Modified:** 2026-05-02
 
 ## APIs
 
 ### Backstage Software Catalog API
-Spotify's developer portal platform providing a software catalog API for managing all software components, services, websites, and infrastructure at scale.
 
-- **Documentation:** [https://backstage.io/docs/features/software-catalog/software-catalog-api](https://backstage.io/docs/features/software-catalog/software-catalog-api)
-- **GitHub:** [https://github.com/backstage/backstage](https://github.com/backstage/backstage)
+Backstage by Spotify provides a software catalog API and developer portal platform for managing all software components, services, websites, and infrastructure at scale. Its catalog API enables registering, tracking, and discovering software components across an organization.
+
+- **Human URL:** [https://backstage.io/docs/features/software-catalog/software-catalog-api](https://backstage.io/docs/features/software-catalog/software-catalog-api)
+
+#### Tags
+
+- Developer Portal
+- Internal Developer Platform
+- Software Catalog
+- Systems Design
+
+#### Properties
+
+- [Documentation](https://backstage.io/docs/features/software-catalog/software-catalog-api)
+- [Git Hub](https://github.com/backstage/backstage)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### CloudEvents API
-CNCF specification for describing event data in a common way, defining a core data model and HTTP, AMQP, MQTT, and Kafka bindings for interoperable event-driven system design.
 
-- **Documentation:** [https://cloudevents.io/](https://cloudevents.io/)
-- **Specification:** [https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md)
-- **GitHub:** [https://github.com/cloudevents/spec](https://github.com/cloudevents/spec)
+CloudEvents is a CNCF specification for describing event data in a common way. It defines a core data model and HTTP, AMQP, MQTT, and Kafka bindings enabling interoperable event-driven system design across cloud providers and middleware.
+
+- **Human URL:** [https://cloudevents.io/](https://cloudevents.io/)
+
+#### Tags
+
+- CNCF
+- Event Driven
+- Events
+- Integration
+- Standards
+
+#### Properties
+
+- [Documentation](https://cloudevents.io/)
+- [Git Hub](https://github.com/cloudevents/spec)
+- [Specification](https://github.com/cloudevents/spec/blob/main/cloudevents/spec.md)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Apache Kafka Admin API
-Admin REST API for creating and managing topics, partitions, consumer groups, and cluster configurations for high-throughput event streaming pipelines.
 
-- **Documentation:** [https://kafka.apache.org/documentation/](https://kafka.apache.org/documentation/)
-- **GitHub:** [https://github.com/apache/kafka](https://github.com/apache/kafka)
+Apache Kafka's Admin REST API enables creating and managing topics, partitions, consumer groups, and cluster configurations for high-throughput event streaming pipelines used in scalable, event-driven architectures.
+
+- **Human URL:** [https://kafka.apache.org/documentation/](https://kafka.apache.org/documentation/)
+
+#### Tags
+
+- Event Driven
+- Event Streaming
+- High Throughput
+- Messaging
+
+#### Properties
+
+- [Documentation](https://kafka.apache.org/documentation/)
+- [Git Hub](https://github.com/apache/kafka)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### NATS Management API
-Lightweight, high-performance messaging system API for monitoring, subject inspection, and JetStream management for scalable event-driven systems.
 
-- **Documentation:** [https://docs.nats.io/](https://docs.nats.io/)
-- **GitHub:** [https://github.com/nats-io/nats-server](https://github.com/nats-io/nats-server)
+NATS is a lightweight, high-performance messaging system for distributed applications. Its management API provides monitoring, subject inspection, and JetStream (persistent streams) management for building scalable event-driven systems.
+
+- **Human URL:** [https://docs.nats.io/](https://docs.nats.io/)
+
+#### Tags
+
+- Cloud Native
+- Event Driven
+- High Performance
+- Messaging
+- Microservices
+
+#### Properties
+
+- [Documentation](https://docs.nats.io/)
+- [Git Hub](https://github.com/nats-io/nats-server)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Temporal API
-Durable execution platform providing an API for long-running, fault-tolerant workflows implementing the saga pattern with full activity retry semantics.
 
-- **Documentation:** [https://docs.temporal.io/](https://docs.temporal.io/)
-- **OpenAPI:** [https://github.com/temporalio/api/blob/master/openapi/openapi.yml](https://github.com/temporalio/api/blob/master/openapi/openapi.yml)
-- **GitHub:** [https://github.com/temporalio/temporal](https://github.com/temporalio/temporal)
+Temporal is a durable execution platform that provides an API for defining and running long-running, fault-tolerant workflows. Implements the saga pattern with full activity retry semantics, enabling reliable orchestration in distributed systems.
+
+- **Human URL:** [https://docs.temporal.io/](https://docs.temporal.io/)
+
+#### Tags
+
+- Distributed Systems
+- Durable Execution
+- Saga Pattern
+- Workflow Orchestration
+
+#### Properties
+
+- [Documentation](https://docs.temporal.io/)
+- [Git Hub](https://github.com/temporalio/temporal)
+- [OpenAPI](https://github.com/temporalio/api/blob/master/openapi/openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Dapr API
-Distributed Application Runtime building block APIs for service invocation, pub/sub messaging, state management, bindings, actors, and distributed tracing.
 
-- **Documentation:** [https://docs.dapr.io/reference/api/](https://docs.dapr.io/reference/api/)
-- **GitHub:** [https://github.com/dapr/dapr](https://github.com/dapr/dapr)
+Dapr (Distributed Application Runtime) provides building block APIs for service invocation, pub/sub messaging, state management, bindings, actors, and distributed tracing. Abstracts away infrastructure complexity for portable, scalable software.
+
+- **Human URL:** [https://docs.dapr.io/reference/api/](https://docs.dapr.io/reference/api/)
+
+#### Tags
+
+- Distributed Systems
+- Event Driven
+- Microservices
+- Scalable Architecture
+
+#### Properties
+
+- [Documentation](https://docs.dapr.io/reference/api/)
+- [Git Hub](https://github.com/dapr/dapr)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### OpenTelemetry API
-Vendor-neutral APIs, SDKs, and instrumentation for generating traces, metrics, and logs. Essential for observability in scalable distributed software systems.
 
-- **Documentation:** [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
-- **GitHub:** [https://github.com/open-telemetry/opentelemetry-specification](https://github.com/open-telemetry/opentelemetry-specification)
+OpenTelemetry provides vendor-neutral APIs, SDKs, and instrumentation for generating traces, metrics, and logs. Essential for observability in scalable distributed software systems, enabling performance analysis and root cause diagnosis.
+
+- **Human URL:** [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
+
+#### Tags
+
+- Distributed Tracing
+- Logs
+- Metrics
+- Observability
+- Telemetry
+
+#### Properties
+
+- [Documentation](https://opentelemetry.io/docs/)
+- [Git Hub](https://github.com/open-telemetry/opentelemetry-specification)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Argo CD API
-Declarative GitOps continuous delivery API for Kubernetes applications. Manages application deployments at scale using Git as the source of truth.
 
-- **Documentation:** [https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/](https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/)
-- **GitHub:** [https://github.com/argoproj/argo-cd](https://github.com/argoproj/argo-cd)
+Argo CD provides a declarative GitOps continuous delivery API for Kubernetes applications. Enables teams to manage application deployments at scale using Git as the source of truth for system state.
 
-## Artifacts
+- **Human URL:** [https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/](https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/)
 
-### JSON Schema
-- [Domain Event Schema](json-schema/scalable-software-and-systems-event-schema.json) — CloudEvents-based schema for domain events in event-sourced and event-driven systems.
+#### Tags
 
-### JSON Structure
-- [Domain Event Structure](json-structure/scalable-software-and-systems-event-structure.json) — Structural documentation for domain events.
+- CD
+- GitOps
+- Kubernetes
+- Platform Engineering
 
-### JSON-LD Context
-- [Scalable Software and Systems Context](json-ld/scalable-software-and-systems-context.jsonld) — Linked data context for distributed systems and software architecture vocabulary.
+#### Properties
 
-### Vocabulary
-- [Scalable Software and Systems Vocabulary](vocabulary/scalable-software-and-systems-vocabulary.yml) — Domain vocabulary covering CQRS, Event Sourcing, Saga Pattern, GitOps, MACH Architecture, Observability, and more.
+- [Documentation](https://argo-cd.readthedocs.io/en/stable/developer-guide/api-docs/)
+- [Git Hub](https://github.com/argoproj/argo-cd)
+- [Postman Collection](collections/scalable-software-and-systems.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/scalable-software-and-systems.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
-### Examples
-- [Order Placed Domain Event](examples/scalable-software-and-systems-order-placed-event-example.json) — Example CloudEvents-compliant domain event with event sourcing metadata.
-- [Temporal Order Saga Workflow](examples/scalable-software-and-systems-temporal-workflow-example.json) — Temporal durable workflow implementing the saga pattern for order fulfillment with compensating transactions.
+## Common Properties
 
-## Common Resources
-
-- [CQRS Pattern](https://microservices.io/patterns/data/cqrs.html)
-- [Event Sourcing Pattern](https://microservices.io/patterns/data/event-sourcing.html)
-- [Saga Pattern](https://microservices.io/patterns/data/saga.html)
-- [CNCF Projects Landscape](https://www.cncf.io/projects/)
-- [The Twelve-Factor App](https://12factor.net/)
+- [Guide](https://microservices.io/patterns/data/cqrs.html)
+- [Guide](https://microservices.io/patterns/data/event-sourcing.html)
+- [Guide](https://microservices.io/patterns/data/saga.html)
+- [Guide](https://www.cncf.io/projects/)
+- [Guide](https://12factor.net/)
+- [JSON Schema](https://github.com/api-evangelist/scalable-software-and-systems/blob/main/json-schema/scalable-software-and-systems-event-schema.json) — [JSON Schema](https://json-schema.org/specification)
+- [JSON Structure](https://github.com/api-evangelist/scalable-software-and-systems/blob/main/json-structure/scalable-software-and-systems-event-structure.json)
+- [J S O N L D Context](https://github.com/api-evangelist/scalable-software-and-systems/blob/main/json-ld/scalable-software-and-systems-context.jsonld)
+- [Vocabulary](https://github.com/api-evangelist/scalable-software-and-systems/blob/main/vocabulary/scalable-software-and-systems-vocabulary.yml)
+- [Examples](https://github.com/api-evangelist/scalable-software-and-systems/blob/main/examples/scalable-software-and-systems-order-placed-event-example.json)
+- [Examples](https://github.com/api-evangelist/scalable-software-and-systems/blob/main/examples/scalable-software-and-systems-temporal-workflow-example.json)
 
 ## Maintainers
 
