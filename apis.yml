@@ -175,6 +175,10 @@ apis:
       - type: GitHub
         url: https://github.com/argoproj/argo-cd
 common:
+  - type: DomainSecurity
+    url: security/scalable-software-and-systems-domain-security.yml
+  - type: Authentication
+    url: authentication/scalable-software-and-systems-authentication.yml
   - type: Guide
     url: https://microservices.io/patterns/data/cqrs.html
     name: CQRS Pattern
