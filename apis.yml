@@ -175,6 +175,8 @@ apis:
       - type: GitHub
         url: https://github.com/argoproj/argo-cd
 common:
+  - type: AgenticAccess
+    url: agentic-access/scalable-software-and-systems-agentic-access.yml
   - type: DomainSecurity
     url: security/scalable-software-and-systems-domain-security.yml
   - type: Authentication
