@@ -1,0 +1,16 @@
+{
+  "provider": "scalable-software-and-systems",
+  "sources": [
+    "scalable-software-and-systems-entities-api-openapi.yml",
+    "scalable-software-and-systems-locations-api-openapi.yml"
+  ],
+  "outputs": [
+    "scalable-software-and-systems-entities-api-openapi.yml",
+    "scalable-software-and-systems-locations-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
