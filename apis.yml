@@ -36,7 +36,7 @@ tags:
 type: Index
 created: '2025-01-20'
 modified: '2026-05-02'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: scalable-software-and-systems:backstage
   name: Backstage Software Catalog API
