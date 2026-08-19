@@ -1,0 +1,159 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Backstage Software Catalog Entities API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Entities",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query entities",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:7007/api/catalog/entities/by-query"
+          },
+          "docs": "Query entities with filtering, field selection, and pagination."
+        },
+        {
+          "info": {
+            "name": "Query entities with advanced predicates",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:7007/api/catalog/entities/by-query",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Query entities with advanced predicates"
+        },
+        {
+          "info": {
+            "name": "Get an entity by UID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:7007/api/catalog/entities/by-uid/:uid",
+            "params": [
+              {
+                "name": "uid",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get an entity by UID"
+        },
+        {
+          "info": {
+            "name": "Delete an entity by UID",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://localhost:7007/api/catalog/entities/by-uid/:uid",
+            "params": [
+              {
+                "name": "uid",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete an entity by UID"
+        },
+        {
+          "info": {
+            "name": "Get an entity by reference triplet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost:7007/api/catalog/entities/by-name/:kind/:namespace/:name",
+            "params": [
+              {
+                "name": "kind",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "namespace",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get an entity by reference triplet"
+        },
+        {
+          "info": {
+            "name": "Get multiple entities by entity references",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:7007/api/catalog/entities/by-refs",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get multiple entities by entity references"
+        },
+        {
+          "info": {
+            "name": "Refresh an entity",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:7007/api/catalog/refresh",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Refresh an entity"
+        },
+        {
+          "info": {
+            "name": "Validate entity schema",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:7007/api/catalog/validate-entity",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Validate entity schema"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
