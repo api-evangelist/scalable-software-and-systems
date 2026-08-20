@@ -23,6 +23,17 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scalable-software-and-systems.png
 tags:
+  - API-First
+  - Architecture Patterns
+  - CQRS
+  - Distributed Systems
+  - Enterprise
+  - Event-Driven
+  - Microservices
+  - Scalable Architecture
+  - Software Engineering
+  - Systems Design
+tags_raw:
   - API First
   - Architecture Patterns
   - CQRS
@@ -63,6 +74,12 @@ apis:
     cloud providers and middleware.
   tags:
   - CNCF
+  - Event-Driven
+  - Event
+  - Integration
+  - Standards
+  tags_raw:
+  - CNCF
   - Event Driven
   - Events
   - Integration
@@ -82,6 +99,11 @@ apis:
     cluster configurations for high-throughput event streaming pipelines used in scalable, event-driven
     architectures.
   tags:
+  - Event-Driven
+  - Event Streaming
+  - High Throughput
+  - Messaging
+  tags_raw:
   - Event Driven
   - Event Streaming
   - High Throughput
@@ -99,6 +121,12 @@ apis:
     API provides monitoring, subject inspection, and JetStream (persistent streams) management for building
     scalable event-driven systems.
   tags:
+  - Cloud-Native
+  - Event-Driven
+  - High Performance
+  - Messaging
+  - Microservices
+  tags_raw:
   - Cloud Native
   - Event Driven
   - High Performance
@@ -117,6 +145,11 @@ apis:
     messaging, state management, bindings, actors, and distributed tracing. Abstracts away infrastructure
     complexity for portable, scalable software.
   tags:
+  - Distributed Systems
+  - Event-Driven
+  - Microservices
+  - Scalable Architecture
+  tags_raw:
   - Distributed Systems
   - Event Driven
   - Microservices
