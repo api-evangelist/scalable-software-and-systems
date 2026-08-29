@@ -8,6 +8,17 @@ description: >-
   that support building maintainable, high-scale software. Relevant to software
   architects, platform teams, and senior engineers building enterprise-grade
   distributed systems.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
