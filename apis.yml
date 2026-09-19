@@ -224,6 +224,8 @@ apis:
   description: The Locations API from Scalable Software and Systems — 2 operation(s) for locations.
   humanURL: https://backstage.io/docs/features/software-catalog/software-catalog-api
   tags:
+  - Location
+  tags_raw:
   - Locations
   properties:
   - type: OpenAPI
