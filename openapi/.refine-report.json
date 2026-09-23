@@ -1,8 +1,7 @@
 {
   "provider": "scalable-software-and-systems",
   "sources": [
-    "scalable-software-and-systems-entities-api-openapi.yml",
-    "scalable-software-and-systems-locations-api-openapi.yml"
+    "_original/scalable-software-and-systems-openapi.yml"
   ],
   "outputs": [
     "scalable-software-and-systems-entities-api-openapi.yml",
@@ -11,6 +10,15 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "scalable-software-and-systems-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "scalable-software-and-systems-openapi.yml: declared missing tag: Entities",
+    "scalable-software-and-systems-openapi.yml: declared missing tag: Locations",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "scalable-software-and-systems-entities-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "scalable-software-and-systems-locations-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
