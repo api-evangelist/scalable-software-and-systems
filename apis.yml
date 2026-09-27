@@ -1,5 +1,6 @@
 aid: scalable-software-and-systems
 name: Scalable Software and Systems
+kind: topic
 description: >-
   A topic collection exploring the APIs, design patterns, frameworks, and
   platforms that enable scalable software and systems engineering. Covers
@@ -10,14 +11,22 @@ description: >-
   distributed systems.
 deliveryModel:
   model: unknown
-  open_source: false
+  license_evidence:
+    not_product:
+    - apache/kafka
+    - argoproj/argo-cd
+    - backstage/backstage
+    - cloudevents/spec
+    - dapr/dapr
+  open_source: unknown
   commercial: false
   callable_host: false
   label: Delivery model not determined — needs a product licence on record
   confidence: low
   source:
   - openapi
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
