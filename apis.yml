@@ -67,7 +67,7 @@ tags_raw:
   - Systems Design
 type: Index
 created: '2025-01-20'
-modified: '2026-05-02'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: scalable-software-and-systems:backstage
@@ -244,6 +244,8 @@ apis:
   - type: GitHub
     url: https://github.com/temporalio/temporal
 common:
+  - url: https://backstage.io/blog/rss.xml
+    type: BlogRSS
   - type: AgenticAccess
     url: agentic-access/scalable-software-and-systems-agentic-access.yml
   - type: DomainSecurity
